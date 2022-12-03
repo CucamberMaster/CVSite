@@ -4,7 +4,8 @@
 }
 
 #hrefsDecoration {
-    text-decoration: 0px;
+    -webkit-text-decoration: 0px;
+            text-decoration: 0px;
     color: white;
 }
 
@@ -27,8 +28,6 @@
 #I::after {
     content: '';
     width: 150%;
-    -webkit-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
     box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
 }
 
@@ -85,8 +84,6 @@
 #S::after {
     content: '';
     width: 150%;
-    -webkit-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
-    -moz-box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
     box-shadow: -35px 0px 60px 8px rgba(255, 255, 255, 1);
 }
 
@@ -282,3 +279,4 @@ h3 {
     margin-top: 10px;
     border: solid 3px white;
 }
+

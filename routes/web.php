@@ -5,11 +5,13 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\CVController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\ToDoListController;
 
 Route::resource('index', SiteController::class);
 Route::resource('faq', FAQController::class);
 Route::resource('cv', CVController::class);
 Route::resource('projects', ProjectsController::class);
+Route::resource('toDoList', toDoListController::class);
 
 /*
 |--------------------------------------------------------------------------

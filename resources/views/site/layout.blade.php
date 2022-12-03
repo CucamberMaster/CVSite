@@ -7,34 +7,25 @@
           integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
           crossorigin="anonymous"
     >
-    <link rel="stylesheet" href="./resources/css/app.css">
+    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="./resources/css/style.scss">
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
 
-        #hrefsDecoration
-        {
-            text-decoration: 0px;
-            color: white;
-        }
-    </style>
+
 </head>
 <body>
 
     <nav class=" navbar navbar-dark bg-dark  text-center sticky-top text-white" id="navBar">
         <div class="container d-flex  pb-2 h4 pt-2" >
-        <div class="container" style="word-spacing: 20vh">
-            <a href="{{route('index.index')}}" id="hrefsDecoration">Home</a>
-            <a href="{{route('faq.index')}}" id="hrefsDecoration">
+        <div class="container col-md-12 col-sm-6" style="word-spacing: 20vh">
+            <a href="{{route('index.index')}}" id="hrefsDecoration" class="
+           col col-md-6 col-lg-6 col-sm-6">Home</a>
+            <a href="{{route('faq.index')}}" id="hrefsDecoration" class=" col col-sm-6">
                 FAQ
             </a>
-            <a href="{{route('cv.index')}}" id="hrefsDecoration">
+            <a href="{{route('cv.index')}}" id="hrefsDecoration" class="  col col-sm-6">
                 CV
             </a>
-            <a href="{{route('projects.index')}}" id="hrefsDecoration">
+            <a href="{{route('projects.index')}}" id="hrefsDecoration" class="  col col-sm-6">
                Projects
             </a>
         </div>
@@ -48,7 +39,7 @@
 
 <div style="background-color: #1c1c1c; height: 100vh" class="container-fluid border border-dark border-1  shadow-lg">
     <div class="row p-5">
-        <div class="container-fluid border border-1 rounded-3 shadow-lg" style="background-color: #131313; width: 100vh; height: 71.45vh">
+        <div class="container-fluid border border-1 rounded-3 box shadow-lg" style="background-color: #131313; ">
     @yield('content')
         </div>
         </div>
@@ -58,11 +49,6 @@
     </div>
 
 </div>
-<style>
-
-    #footer{
-        letter-spacing: 3px;
-    }
-</style>
+    <script src="/js/app.js"></script>
 </body>
 </html>
